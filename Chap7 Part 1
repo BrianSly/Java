@@ -1,0 +1,9 @@
+public class Chap7Part1
+{
+   public static void main(String[] args)
+   {
+	System.out.println("Day 1\tDay2\tDay3\tDay4");
+    System.out.println("\t");
+	System.out.println("Day 5");
+    }
+}
