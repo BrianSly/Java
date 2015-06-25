@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Chap8Part7
+{
+	public static void main(String[] args)
+	{
+	Scanner input = new Scanner(System.in);
+	String answer = "Watson";
+	String response = "";
+	System.out.println("Shall we play a game?");
+	//
+	System.out.println("Lets play a guessing game. You get three tries.");
+	System.out.println("What was the name of the computer that played on Jeopardy? ");
+	response = input.nextLine();
+	if (response.equals(answer))
+		System.out.println("You win.");
+	else {
+		System.out.println("Sorry. Guess again: ");
+		response = input.nextLine();
+		if (response.equals(answer))
+		   System.out.println("You win.");
+        else {
+			System.out.print("Still not right. One more guess: ");
+			response = input.nextLine();
+			if (response.equals(answer))
+		       System.out.println("You win.");
+		    else
+				System.out.println("Wrong again, the answer is Watson.");
+		      }
+		  } 	
+	 }
+               
+}
